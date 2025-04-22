@@ -12,7 +12,7 @@ const Banner = () => {
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
-    const getRandomMovieIndex = () => Math.floor(Math.random() * 20); // Adjust the range as needed
+    const getRandomMovieIndex = () => Math.floor(Math.random() * 20); 
 
     axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${api_key}&language=en-US`)
       .then(response => {
